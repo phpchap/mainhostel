@@ -422,6 +422,10 @@ blockquote:hover {
 .footer .posts {
 	padding:0 15px;
 }
+/*Blog Posts*/
+.footer .posts.nopadding {
+	padding:0 0;
+}
 .footer .blog-list {
 	margin:0;
 	padding:0;
@@ -454,11 +458,15 @@ blockquote:hover {
 .copyright {
 	font-size:12px;
 	padding:5px 10px;
-	background:#3e4753;
+	background:#222;
 	border-top:solid 1px #777;	
+        background: url(/assets/img/footer.png) repeat-y 10px 0;
+        background-position: 0% 1052px;
+        background-color: #444;
+        background-size: 97%;        
 }
 .copyright p {
-	color:#dadada;
+	color:#fff;
 }
 .copyright a {
 	margin:0 5px;
@@ -1674,7 +1682,7 @@ a.btn-u-large {
 	margin:0;
 }
 .social-icons li {
-	float:left;
+	float:right;
 	display:inline;
 	list-style:none;
 	margin-right:5px;
