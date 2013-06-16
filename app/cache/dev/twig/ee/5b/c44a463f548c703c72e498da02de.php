@@ -45,10 +45,8 @@ class __TwigTemplate_ee5bc44a463f548c703c72e498da02de extends Twig_Template
         // line 386
         echo "<!--=== Content Part ===-->
 <div class=\"container\">\t\t
-
     <div class=\"row-fluid margin-bottom-30\">
     \t<div class=\"span3\">
-
             <!-- Monthly Newsletter -->
             <div class=\"headline\"><h3>Monthly Newsletter</h3></div>\t
             <p>Subscribe to our newsletter and stay up to date with the latest news and deals!</p>
@@ -58,14 +56,11 @@ class __TwigTemplate_ee5bc44a463f548c703c72e498da02de extends Twig_Template
                     <button class=\"btn-u\">Subscribe</button>
                 </div>
             </form>\t
-
             <div class=\"headline\"><h3>Facebook</h3></div>
             <div style=\"background:#fff;\" class=\"fb-like-box\" data-href=\"http://www.facebook.com/pages/Atlas-Hostels-Plc/168741279912015\" data-width=\"292\" data-height=\"400\" data-show-faces=\"true\" data-stream=\"false\" data-show-border=\"true\" data-header=\"true\"></div>
-
         </div>
     \t<div class=\"span6\">
-
-<div id=\"myCarousel\" class=\"carousel slide\" style=\"margin-top:20px\">
+            <div id=\"myCarousel\" class=\"carousel slide\" style=\"margin-top:20px\">
                 <div class=\"carousel-inner\">
                     <div class=\"item active\">
                         <img src=\"/assets/img/carousel/5.jpg\" alt=\"\">
@@ -117,11 +112,9 @@ class __TwigTemplate_ee5bc44a463f548c703c72e498da02de extends Twig_Template
 
         </div>
     \t<div class=\"span3\">
-
-            <div class=\"myallocator\" style=\"margin-top:50px;\">
+            <div class=\"myallocator\" style=\"margin-top:20px;\">
                 <iframe src=\"https://myallocator.com/ext/booknow.xt?apikey=raG4kbvrwUFmelDCY1btDg\" style=\"width: 350px; height: 300px; border: none\" allowtransparency=\"true\"></iframe>
             </div>
-
             <div class=\"headline\"><h3>Things to Do</h3></div>
             <div class=\"posts margin-bottom-20\">
                 <dl class=\"dl-horizontal\">
