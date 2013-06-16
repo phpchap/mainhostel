@@ -1,0 +1,7 @@
+atlas_front_end:
+    resource: "@AtlasFrontEndBundle/Resources/config/routing.yml"
+    prefix:   /
+
+atlas_booking:
+    resource: "@AtlasBookingBundle/Resources/config/routing.yml"
+    prefix:   /

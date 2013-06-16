@@ -1,0 +1,3 @@
+atlas_booking_homepage:
+    pattern:  /booking/
+    defaults: { _controller: AtlasBookingBundle:Booking:index }

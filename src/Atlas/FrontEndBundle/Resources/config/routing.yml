@@ -1,0 +1,35 @@
+atlas_front_end_homepage:
+    pattern:  /
+    defaults: { _controller: AtlasFrontEndBundle:Page:home }
+
+atlas_front_end_booking:
+    pattern:  /booking
+    defaults: { _controller: AtlasFrontEndBundle:Page:booking }
+
+atlas_front_end_rooms:
+    pattern:  /rooms
+    defaults: { _controller: AtlasFrontEndBundle:Page:rooms }
+
+atlas_front_end_gallery:
+    pattern:  /gallery
+    defaults: { _controller: AtlasFrontEndBundle:Page:gallery }
+
+atlas_front_end_location:
+    pattern:  /location
+    defaults: { _controller: AtlasFrontEndBundle:Page:location }
+
+atlas_front_end_help:
+    pattern:  /help
+    defaults: { _controller: AtlasFrontEndBundle:Page:help }
+
+atlas_front_end_investors:
+    pattern:  /investors
+    defaults: { _controller: AtlasFrontEndBundle:Page:investors }
+
+atlas_front_end_privacy_policy:
+    pattern:  /privacy
+    defaults: { _controller: AtlasFrontEndBundle:Page:privacy }
+
+atlas_front_end_terms:
+    pattern:  /terms
+    defaults: { _controller: AtlasFrontEndBundle:Page:terms }

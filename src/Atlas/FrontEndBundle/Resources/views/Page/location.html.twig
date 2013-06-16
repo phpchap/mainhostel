@@ -1,0 +1,83 @@
+{% extends "::base.html.twig" %}
+
+{% block heading_breadcrumbs %}
+<div class="row-fluid breadcrumbs">
+    <div class="container">
+        <h1 class="pull-left">Location</h1>
+        <ul class="pull-right breadcrumb">
+            <li><a href="index.html">Home</a> <span class="divider">/</span></li>
+            <li class="active">Location</li>
+        </ul>
+    </div><!--/container-->
+</div>
+{% endblock %}
+
+{% block content_part %}
+
+<!--=== Content Part ===-->
+<div class="container">	
+    <div class="row-fluid">
+        <div class="span9">
+            <div id="map" class="map map-box map-box-space margin-bottom-40">
+        </div><!---/map-->
+        <p>Atlas Hostel is located next to London Paddington train station; A short walk away from the hostel and you have the majestic Hyde Park, shopping on Oxford Circus, Regents Street and Kensington. </p><br />
+        <form>
+            <label>Name</label>
+            <input type="text" class="span7" />
+            <label>Email <span class="color-red">*</span></label>
+            <input type="text" class="span7" />
+            <label>Message</label>
+            <textarea rows="8" class="span10"></textarea>
+            <p><button type="submit" class="btn-u">Send Message</button></p>
+        </form>
+    </div><!--/span9-->
+
+    <div class="span3">
+        <!-- Contacts -->
+        <div class="headline"><h3>Address</h3></div>
+
+        <ul class="unstyled who margin-bottom-20">
+            <li><i class="icon-home"></i>16 Talbot Street, London, Paddington, W25LH</a></li>
+            <li><i class="icon-phone-sign"></i>0845 519 9448</a></li>
+        </ul>
+
+        <!-- Business Hours -->
+        <div class="headline"><h3>Contact</h3></div>
+        <ul class="unstyled who">
+            <li><a href="mailto:info@atlashostels.com"><i class="icon-envelope-alt"></i>info@atlashostels.com</a></li>
+            <li><a href="mailto:bookintgs@atlashostels.com"><i class="icon-envelope-alt"></i>bookintgs@atlashostels.com</a></li>
+            <li><a href="mailto:feedback@atlashostels.com"><i class="icon-envelope-alt"></i>feedback@atlashostels.com</a></li>
+        </ul>
+
+    </div><!--/span3-->        
+</div><!--/row-fluid-->        
+</div><!--/container-->		
+<!--=== End Content Part ===-->
+
+{% endblock %}
+
+{% block footer_js %}
+<!-- JS Global Compulsory -->           
+<script type="text/javascript" src="/assets/js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="/assets/js/modernizr.custom.js"></script>        
+<script type="text/javascript" src="/assets/plugins/bootstrap/js/bootstrap.min.js"></script> 
+<!-- JS Implementing Plugins -->           
+<script type="text/javascript" src="/assets/plugins/flexslider/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+<script type="text/javascript" src="/assets/plugins/gmap/gmap.js"></script>
+<script type="text/javascript" src="/assets/plugins/back-to-top.js"></script>
+<!-- JS Page Level -->           
+<script type="text/javascript" src="/assets/js/app.js"></script>
+<script type="text/javascript" src="/assets/js/pages/contact.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        App.init();
+        App.initSliders();                
+        Contact.initMap();        
+    });
+</script>
+<!--[if lt IE 9]>
+    <script src="/assets/js/respond.js"></script>
+<![endif]-->
+{% endblock %}
+    

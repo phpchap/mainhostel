@@ -1,0 +1,7 @@
+parameters:
+#    atlas_booking.example.class: Atlas\BookingBundle\Example
+
+services:
+#    atlas_booking.example:
+#        class: %atlas_booking.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

@@ -1,0 +1,7 @@
+parameters:
+#    atlas_website.example.class: Atlas\WebsiteBundle\Example
+
+services:
+#    atlas_website.example:
+#        class: %atlas_website.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
