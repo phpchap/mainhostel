@@ -20,9 +20,6 @@ class __TwigTemplate_b9b1a885db18fb1b2ad9f96c457ae70e extends Twig_Template
             'slider' => array($this, 'block_slider'),
             'heading_breadcrumbs' => array($this, 'block_heading_breadcrumbs'),
             'content_part' => array($this, 'block_content_part'),
-            'footer' => array($this, 'block_footer'),
-            'atlas_investment' => array($this, 'block_atlas_investment'),
-            'facebook_like_box' => array($this, 'block_facebook_like_box'),
             'copyright' => array($this, 'block_copyright'),
             'footer_js' => array($this, 'block_footer_js'),
             'js_init' => array($this, 'block_js_init'),
@@ -50,7 +47,7 @@ class __TwigTemplate_b9b1a885db18fb1b2ad9f96c457ae70e extends Twig_Template
     <!-- CSS Global Compulsory-->
     <link rel=\"stylesheet\" href=\"";
         // line 16
-        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("/assets/plugins/bootstrap/css/bootstrap.min.css"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("/assets/plugins/bootstrap/css/bootstrap.css"), "html", null, true);
         echo "\">
     <link rel=\"stylesheet\" href=\"";
         // line 17
@@ -130,37 +127,33 @@ class __TwigTemplate_b9b1a885db18fb1b2ad9f96c457ae70e extends Twig_Template
 ";
         // line 72
         $this->displayBlock('header', $context, $blocks);
-        // line 139
+        // line 121
         echo "
 ";
-        // line 140
+        // line 122
         $this->displayBlock('slider', $context, $blocks);
-        // line 141
+        // line 123
         echo "
 ";
-        // line 142
+        // line 124
         $this->displayBlock('heading_breadcrumbs', $context, $blocks);
-        // line 143
+        // line 125
         echo "
 ";
-        // line 144
+        // line 126
         $this->displayBlock('content_part', $context, $blocks);
-        // line 145
+        // line 127
         echo "
+
 ";
-        // line 146
-        $this->displayBlock('footer', $context, $blocks);
-        // line 202
-        echo "
-";
-        // line 203
+        // line 129
         $this->displayBlock('copyright', $context, $blocks);
-        // line 218
+        // line 135
         echo "
 ";
-        // line 219
+        // line 136
         $this->displayBlock('footer_js', $context, $blocks);
-        // line 252
+        // line 169
         echo "</body>
 </html> ";
     }
@@ -206,11 +199,11 @@ class __TwigTemplate_b9b1a885db18fb1b2ad9f96c457ae70e extends Twig_Template
                 <li><a href=\"#\" data-original-title=\"Twitter\" class=\"social_twitter\"></a></li>
                 <li><a href=\"#\" data-original-title=\"Pinterest\" class=\"social_pintrest\"></a></li>
             </ul>
-
             <ul class=\"loginbar inline\" style=\"float:right;width:300px;\">
                 <li><a href=\"mailto:info@atlashostels.com\"><i class=\"icon-envelope-alt\"></i> info@atlashostels.com</a></li> 
                 <li><a><i class=\"icon-phone-sign\"></i> 0845 519 9448</a></li>   
             </ul>
+
         </div>                        
     </div><!--/container-->     
 </div><!--/top-->
@@ -233,7 +226,7 @@ class __TwigTemplate_b9b1a885db18fb1b2ad9f96c457ae70e extends Twig_Template
         ";
         // line 83
         $this->displayBlock('navbar', $context, $blocks);
-        // line 135
+        // line 117
         echo "    </div><!-- /container -->               
 </div><!--/header -->      
 <!--=== End Header ===-->
@@ -246,8 +239,9 @@ class __TwigTemplate_b9b1a885db18fb1b2ad9f96c457ae70e extends Twig_Template
         // line 77
         echo "        <!-- Logo -->       
         <div class=\"logo\">                                             
-            <a href=\"/\"><img id=\"logo-header\" src=\"/assets/img/logo2-default.png\" alt=\"Logo\"></a>
-        </div><!-- /logo -->                  
+            ";
+        // line 80
+        echo "        </div><!-- /logo -->                  
         ";
     }
 
@@ -269,55 +263,37 @@ class __TwigTemplate_b9b1a885db18fb1b2ad9f96c457ae70e extends Twig_Template
                             <a href=\"";
         // line 95
         echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("atlas_front_end_homepage"), "html", null, true);
-        echo "\">Home
-                            <b class=\"caret\"></b>                            
-                            </a>
-                            <b class=\"caret-out\"></b>                        
+        echo "\">Home</a>
+                        </li>
+                        <li>
+                            <a href=\"";
+        // line 98
+        echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("atlas_front_end_booking"), "html", null, true);
+        echo "\">Booking</a>
                         </li>
                         <li>
                             <a href=\"";
         // line 101
-        echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("atlas_front_end_booking"), "html", null, true);
-        echo "\">Booking
-                                <b class=\"caret\"></b>                            
-                            </a>
-                            <b class=\"caret-out\"></b>                        
+        echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("atlas_front_end_location"), "html", null, true);
+        echo "\">Location</a>
+                        </li>
+                        <li>
+                            <a href=\"";
+        // line 104
+        echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("atlas_front_end_rooms"), "html", null, true);
+        echo "\">Rooms</a>
                         </li>
                         <li>
                             <a href=\"";
         // line 107
-        echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("atlas_front_end_location"), "html", null, true);
-        echo "\">Location
-                                <b class=\"caret\"></b>                            
-                            </a>
-                            <b class=\"caret-out\"></b>                        
-                        </li>
-                        <li>
-                            <a href=\"";
-        // line 113
-        echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("atlas_front_end_rooms"), "html", null, true);
-        echo "\">Rooms
-                                <b class=\"caret\"></b>                            
-                            </a>
-                            <b class=\"caret-out\"></b>                        
-                        </li>
-                        <li>
-                            <a href=\"";
-        // line 119
         echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("atlas_front_end_gallery"), "html", null, true);
-        echo "\">Gallery
-                                <b class=\"caret\"></b>                            
-                            </a>
-                            <b class=\"caret-out\"></b>                        
+        echo "\">Gallery</a>
                         </li>
                         <li>
                             <a href=\"";
-        // line 125
+        // line 110
         echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("atlas_front_end_help"), "html", null, true);
-        echo "\" >Help
-                                <b class=\"caret\"></b>                            
-                            </a>
-                            <b class=\"caret-out\"></b>                        
+        echo "\" >Help</a>
                         </li>
                     </ul>
                 </div><!-- /nav-collapse -->                                
@@ -326,134 +302,36 @@ class __TwigTemplate_b9b1a885db18fb1b2ad9f96c457ae70e extends Twig_Template
         ";
     }
 
-    // line 140
+    // line 122
     public function block_slider($context, array $blocks = array())
     {
     }
 
-    // line 142
+    // line 124
     public function block_heading_breadcrumbs($context, array $blocks = array())
     {
     }
 
-    // line 144
+    // line 126
     public function block_content_part($context, array $blocks = array())
     {
     }
 
-    // line 146
-    public function block_footer($context, array $blocks = array())
-    {
-        // line 147
-        echo "<!--=== Footer ===-->
-<div class=\"footer\">
-    <div class=\"container\">
-        <div class=\"row-fluid\">
-
-            ";
-        // line 152
-        $this->displayBlock('atlas_investment', $context, $blocks);
-        // line 172
-        echo "            
-            <div class=\"span4\">
-
-                <!-- Contact us -->
-                <div class=\"headline\"><h3>Contact Us</h3></div>\t
-                <address>
-                    16 Talbot Street<br />
-                    London <br />
-                    Paddington <br />
-                    W2 5LH <br />
-                    Phone: 0845 519 9448 <br />
-                    Fax: ???? ??? ???? <br />
-                    Email: <a href=\"mailto:info@atlashostels.com\" class=\"\">info@atlashostels.com</a>
-                </address>
-
-
-            </div><!--/span4-->
-
-            ";
-        // line 190
-        $this->displayBlock('facebook_like_box', $context, $blocks);
-        // line 196
-        echo "
-        </div><!--/row-fluid-->\t
-    </div><!--/container-->\t
-</div><!--/footer-->\t
-<!--=== End Footer ===-->
-";
-    }
-
-    // line 152
-    public function block_atlas_investment($context, array $blocks = array())
-    {
-        // line 153
-        echo "            <div class=\"span4\">
-
-                <!-- About -->
-                <div class=\"headline\"><h3>About Atlas Hostels PLC</h3></div>\t
-                <p>Atlas Hostels Plc was incorporated with experts from the fields of investments, property and finance with established records of achievement.</p>\t
-                <p class=\"margin-bottom-25\">To find out more information about investment, please visit the <a href=\"";
-        // line 158
-        echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("atlas_front_end_investors"), "html", null, true);
-        echo "\">investor centre</a></p>\t
-
-                <!-- Monthly Newsletter -->
-                <div class=\"headline\"><h3>Monthly Newsletter</h3></div>\t
-                <p>Subscribe to our newsletter and stay up to date with the latest news and deals!</p>
-                <form class=\"form-inline\">
-                    <div class=\"input-append\">
-                        <input type=\"text\" placeholder=\"Email Address\" class=\"input-medium\">
-                        <button class=\"btn-u\">Subscribe</button>
-                    </div>
-                </form>\t
-\t\t\t\t\t\t
-            </div><!--/span4-->\t
-            ";
-    }
-
-    // line 190
-    public function block_facebook_like_box($context, array $blocks = array())
-    {
-        // line 191
-        echo "            <div class=\"span4\">
-                <div class=\"headline\"><h3>Facebook</h3></div>
-                <div style=\"background:#fff;\" class=\"fb-like-box\" data-href=\"http://www.facebook.com/pages/Atlas-Hostels-Plc/168741279912015\" data-width=\"292\" data-height=\"400\" data-show-faces=\"true\" data-stream=\"false\" data-show-border=\"true\" data-header=\"true\"></div>
-            </div><!--/span4-->
-            ";
-    }
-
-    // line 203
+    // line 129
     public function block_copyright($context, array $blocks = array())
     {
-        // line 204
+        // line 130
         echo "<!--=== Copyright ===-->
 <div class=\"copyright\">
-
-    <div class=\"container\">
-        <div class=\"row-fluid\">
-            <div class=\"span8\">\t\t\t\t\t\t
-                <p>2013 &copy; Atlas Hostels PLC. <a href=\"";
-        // line 210
-        echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("atlas_front_end_privacy_policy"), "html", null, true);
-        echo "\">Privacy Policy</a> | <a href=\"";
-        echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("atlas_front_end_terms"), "html", null, true);
-        echo "\">Terms of Service</a> | <a href=\"";
-        echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("atlas_front_end_investors"), "html", null, true);
-        echo "\" target=\"_blank\">Invester Centre</a></p>
-            </div>
-
-        </div><!--/row-fluid-->
-    </div><!--/container-->\t
 </div><!--/copyright-->\t
 <!--=== End Copyright ===-->
 ";
     }
 
-    // line 219
+    // line 136
     public function block_footer_js($context, array $blocks = array())
     {
-        // line 220
+        // line 137
         echo "<!-- JS Global Compulsory -->           
 <script type=\"text/javascript\" src=\"/assets/js/jquery-1.8.2.min.js\"></script>
 <script type=\"text/javascript\" src=\"/assets/js/modernizr.custom.js\"></script>        
@@ -479,7 +357,7 @@ class __TwigTemplate_b9b1a885db18fb1b2ad9f96c457ae70e extends Twig_Template
         App.initSliders();
         Index.initRevolutionSlider();        
         ";
-        // line 244
+        // line 161
         $this->displayBlock('js_init', $context, $blocks);
         echo "  
     });
@@ -507,6 +385,6 @@ class __TwigTemplate_b9b1a885db18fb1b2ad9f96c457ae70e extends Twig_Template
 
     public function getDebugInfo()
     {
-        return array (  483 => 244,  457 => 220,  454 => 219,  438 => 210,  430 => 204,  427 => 203,  419 => 191,  416 => 190,  398 => 158,  391 => 153,  388 => 152,  379 => 196,  377 => 190,  357 => 172,  355 => 152,  348 => 147,  345 => 146,  340 => 144,  335 => 142,  330 => 140,  316 => 125,  307 => 119,  298 => 113,  289 => 107,  280 => 101,  271 => 95,  258 => 84,  255 => 83,  247 => 77,  244 => 76,  237 => 135,  235 => 83,  232 => 82,  230 => 76,  225 => 73,  222 => 72,  200 => 52,  197 => 51,  185 => 41,  182 => 40,  177 => 35,  172 => 8,  169 => 7,  164 => 252,  162 => 219,  159 => 218,  157 => 203,  154 => 202,  152 => 146,  149 => 145,  147 => 144,  144 => 143,  142 => 142,  139 => 141,  137 => 140,  134 => 139,  132 => 72,  129 => 71,  127 => 51,  124 => 50,  122 => 40,  116 => 36,  114 => 35,  108 => 32,  104 => 31,  100 => 30,  96 => 29,  91 => 27,  87 => 26,  83 => 25,  79 => 24,  75 => 23,  69 => 20,  65 => 19,  61 => 18,  57 => 17,  53 => 16,  45 => 10,  35 => 1,  46 => 386,  43 => 7,  38 => 7,  33 => 4,  30 => 3,);
+        return array (  361 => 161,  335 => 137,  332 => 136,  324 => 130,  321 => 129,  316 => 126,  311 => 124,  306 => 122,  295 => 110,  289 => 107,  283 => 104,  277 => 101,  271 => 98,  265 => 95,  252 => 84,  249 => 83,  244 => 80,  240 => 77,  237 => 76,  230 => 117,  228 => 83,  225 => 82,  223 => 76,  218 => 73,  215 => 72,  193 => 52,  190 => 51,  178 => 41,  175 => 40,  170 => 35,  165 => 8,  162 => 7,  157 => 169,  155 => 136,  152 => 135,  150 => 129,  146 => 127,  144 => 126,  141 => 125,  139 => 124,  136 => 123,  134 => 122,  131 => 121,  129 => 72,  126 => 71,  124 => 51,  121 => 50,  119 => 40,  113 => 36,  111 => 35,  105 => 32,  101 => 31,  97 => 30,  93 => 29,  88 => 27,  84 => 26,  80 => 25,  76 => 24,  72 => 23,  66 => 20,  62 => 19,  58 => 18,  54 => 17,  50 => 16,  42 => 10,  40 => 7,  32 => 1,  46 => 386,  43 => 385,  38 => 7,  33 => 4,  30 => 3,);
     }
 }

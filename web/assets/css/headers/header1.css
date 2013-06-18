@@ -22,7 +22,7 @@
 	color:#7c8082;
 	font-size:11px;
 	text-transform:uppercase;
-	font-family:'Open Sans', sans-serif;
+	font-family:'Delius', sans-serif;
 }
 
 .loginbar li.devider { 
@@ -176,7 +176,7 @@
 	padding:9px 20px;
 	text-transform:uppercase;
 	border-bottom:solid 2px #eee;
-	font-family:'Open Sans', sans-serif;
+	font-family:'Delius', sans-serif;
     -webkit-transition:all 0.4s ease-in-out;
     -moz-transition:all 0.4s ease-in-out;
     -o-transition:all 0.4s ease-in-out;

@@ -8,7 +8,9 @@ Website: http://htmlstream.com/preview/unify
 
 /*Import Google Fonts*/
 @import url(http://fonts.googleapis.com/css?family=Monda:400,700);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+/*@import url(http://fonts.googleapis.com/css?family=Open+Sans);*/
+@import url(http://fonts.googleapis.com/css?family=Architects+Daughter);
+@import url(http://fonts.googleapis.com/css?family=Delius);
 
 * {
 	border-radius:0 !important;
@@ -44,7 +46,7 @@ h1, h2, h3, h4, h5 {
 	text-shadow:none; 
 	text-shadow:0 0 1px #f6f6f6;
 	font-weight:normal !important; 
-	font-family:'Open Sans', sans-serif; 
+	font-family:'Delius', sans-serif; 
 } 
 h1 i, h2 i, h3 i, h4 i, h5 i {
 	margin-right:7px;
@@ -170,7 +172,7 @@ blockquote:hover {
 	font-size:16px;
 	background:#fcfcfc;
 	border-left:4px solid #94c564; 
-	font-family:'Open Sans', sans-serif;
+	font-family:'Delius', sans-serif;
 }
 .hero h1, .hero p { 
 	text-shadow:1px 1px 0 #fff;
@@ -456,15 +458,15 @@ blockquote:hover {
 
 /*Copyright*/
 .copyright {
-	font-size:12px;
-	padding:5px 10px;
-	background:#222;
-	border-top:solid 1px #777;	
-        background: url(/assets/img/footer.png) repeat-y 10px 0;
-        background-position: 0% 1052px;
-        background-color: #444;
-        background-size: 97%;        
+        font-size: 12px;
+        padding: 5px 10px;
+        height: 204px;
+        background: url(/assets/img/footer.png) repeat 0px 0;
+        background-position: 0% 770px;
+        background-color: white;
+        background-size: 77%;
 }
+
 .copyright p {
 	color:#fff;
 }
@@ -682,6 +684,7 @@ blockquote:hover {
 }
 .posts .dl-horizontal dd p { 
 	margin:0;
+        text-align: right;        
 }
 .posts .dl-horizontal a {
 	font-size:15px;
@@ -1263,6 +1266,13 @@ ul.blog-tags a i {
 
 /*Contact Page
 ------------------------------------*/
+.sidebar.map {
+        width: 100%;
+        height: 250px;
+        border-top: solid 1px #EEE;
+        border-bottom: solid 1px #EEE;
+}
+
 .map {
 	width:100%; 
 	height:350px;
@@ -1690,10 +1700,10 @@ a.btn-u-large {
 	text-indent:-9999px;
 }
 .social-icons li a, a.social-icon {
+	background-position:0 -38px;    
 	width:28px;
 	height:28px;
 	display:block;
-	background-position:0 0;
 	background-repeat:no-repeat;
 	transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
@@ -1702,7 +1712,7 @@ a.btn-u-large {
 	-webkit-transition: all 0.3s ease-in-out;
 }
 .social-icons li:hover a {
-	background-position:0 -38px;
+	background-position:0 0;    
 }
 
 .social_amazon {background: url(../img/icons/social/amazon.png) no-repeat;}
