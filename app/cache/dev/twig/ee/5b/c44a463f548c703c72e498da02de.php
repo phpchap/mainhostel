@@ -13,7 +13,6 @@ class __TwigTemplate_ee5bc44a463f548c703c72e498da02de extends Twig_Template
             'before_head' => array($this, 'block_before_head'),
             'slider' => array($this, 'block_slider'),
             'content_part' => array($this, 'block_content_part'),
-            'footer_js' => array($this, 'block_footer_js'),
         );
     }
 
@@ -47,23 +46,11 @@ class __TwigTemplate_ee5bc44a463f548c703c72e498da02de extends Twig_Template
         echo "<!--=== Content Part ===-->
 <div class=\"container\">\t\t
     <div class=\"row-fluid\">
-    \t<div class=\"span3\">
-            <!-- Monthly Newsletter -->
-            <div class=\"headline\"><h3>Monthly Newsletter</h3></div>\t
-            <p>Subscribe to our newsletter and stay up to date with the latest news and deals!</p>
-            <form class=\"form-inline\">
-                <div class=\"input-append\">
-                    <input type=\"text\" placeholder=\"Email Address\" class=\"input-medium\">
-                    <button class=\"btn-u\">Subscribe</button>
-                </div>
-            </form>\t
-            <div class=\"headline\"><h3>Facebook</h3></div>
-            <div style=\"background:#fff;width:270px;overflow:hidden;\" class=\"fb-like-box\" data-href=\"http://www.facebook.com/pages/Atlas-Hostels-Plc/168741279912015\" data-width=\"292\" data-height=\"400\" data-show-faces=\"true\" data-stream=\"false\" data-show-border=\"false\" data-header=\"true\"></div>
-            <div class=\"headline\"><h3>Location</h3></div>
-            <div id=\"map\" class=\"sidebar map margin-bottom-40\"></div>
-
-        </div>
-    \t<div class=\"span6\">
+        ";
+        // line 389
+        $this->env->loadTemplate("::column_left.html.twig")->display($context);
+        // line 390
+        echo "    \t<div class=\"span6\">
             <div id=\"myCarousel\" class=\"carousel slide\" style=\"margin-top:20px\">
                 <div class=\"carousel-inner\">
                     <div class=\"item active\">
@@ -88,12 +75,9 @@ class __TwigTemplate_ee5bc44a463f548c703c72e498da02de extends Twig_Template
                         </div>
                     </div>
                 </div>
-                <div class=\"carousel-arrow\">
-                    <a data-slide=\"prev\" href=\"#myCarousel\" class=\"left carousel-control\"><i class=\"icon-angle-left\"></i></a>
-                    <a data-slide=\"next\" href=\"#myCarousel\" class=\"right carousel-control\"><i class=\"icon-angle-right\"></i></a>
-                </div>
-            </div>
-
+";
+        // line 421
+        echo "            </div>
             <!-- About Us -->
             <div class=\"headline\">
                 <h3>Atlas Hostels</h3>
@@ -115,76 +99,15 @@ class __TwigTemplate_ee5bc44a463f548c703c72e498da02de extends Twig_Template
             </blockquote>
 
         </div>
-    \t<div class=\"span3\">
-            <div class=\"myallocator\" style=\"margin-top:20px;\">
-                <iframe src=\"https://myallocator.com/ext/booknow.xt?apikey=raG4kbvrwUFmelDCY1btDg\" style=\"width: 350px; height: 300px; border: none\" allowtransparency=\"true\"></iframe>
-            </div>
-            <div class=\"headline\"><h3>Things to Do</h3></div>
-            <div class=\"posts margin-bottom-20\">
-                <dl class=\"dl-horizontal\">
-                    <dt><a href=\"#\"><img src=\"/assets/img/sliders/elastislide/6.jpg\" alt=\"\"></a></dt>
-                    <dd>
-                        <p><a href=\"#\">Anim moon officia Unify is an incredibly beautiful responsive Bootstrap Template</a></p> 
-                    </dd>
-                </dl>
-                <dl class=\"dl-horizontal\">
-                    <dt><a href=\"#\"><img src=\"/assets/img/sliders/elastislide/10.jpg\" alt=\"\"></a></dt>
-                    <dd>
-                        <p><a href=\"#\">Lorem sequat ipsum dolor lorem sunt aliqua put a bird sit amet consectetur.</a></p> 
-                    </dd>
-                </dl>
-                <dl class=\"dl-horizontal\">
-                    <dt><a href=\"#\"><img src=\"/assets/img/sliders/elastislide/11.jpg\" alt=\"\"></a></dt>
-                    <dd>
-                        <p><a href=\"#\">It works on all major web browsers, tablets and aliqua lorem sequat ipsum.</a></p> 
-                    </dd>
-                </dl>
-            </div>
-
-            <div class=\"headline\"><h3>Follow us</h3></div>
-
-            <div style=\"float:left;\">
-                <a href=\"#\"><img src=\"https://twitter.com/images/resources/twitter-bird-white-on-blue.png\" height=\"150\" width=\"150\"></a>
-            </div>
-
-            <div style=\"float:right;\">
-                <a href=\"#\"><img src=\"/assets/img/Free-Wifi.png\" height=\"100\" width=\"100\"></a>
-            </div>
-
-        </div>
-    </div><!--/row-fluid-->\t
+        ";
+        // line 443
+        $this->env->loadTemplate("::column_right.html.twig")->display($context);
+        // line 444
+        echo "    </div><!--/row-fluid-->\t
     <!--//End About Us -->
+
 </div><!--/container-->\t\t
 <!-- End Content Part -->
-";
-    }
-
-    // line 500
-    public function block_footer_js($context, array $blocks = array())
-    {
-        // line 501
-        echo "<!-- JS Global Compulsory -->           
-<script type=\"text/javascript\" src=\"/assets/js/jquery-1.8.2.min.js\"></script>
-<script type=\"text/javascript\" src=\"/assets/js/modernizr.custom.js\"></script>        
-<script type=\"text/javascript\" src=\"/assets/plugins/bootstrap/js/bootstrap.min.js\"></script> 
-<!-- JS Implementing Plugins -->           
-<script type=\"text/javascript\" src=\"/assets/plugins/flexslider/jquery.flexslider-min.js\"></script>
-<script type=\"text/javascript\" src=\"http://maps.google.com/maps/api/js?sensor=true\"></script>
-<script type=\"text/javascript\" src=\"/assets/plugins/gmap/gmap.js\"></script>
-<script type=\"text/javascript\" src=\"/assets/plugins/back-to-top.js\"></script>
-<!-- JS Page Level -->           
-<script type=\"text/javascript\" src=\"/assets/js/app.js\"></script>
-<script type=\"text/javascript\" src=\"/assets/js/pages/contact.js\"></script>
-<script type=\"text/javascript\">
-    jQuery(document).ready(function() {
-        App.init();
-        App.initSliders();                
-        Contact.initMap();        
-    });
-</script>
-<!--[if lt IE 9]>
-<script type=\"text/javascript\" src=\"/assets/js/respond.js\"></script>
-<![endif]-->
 ";
     }
 
@@ -200,6 +123,6 @@ class __TwigTemplate_ee5bc44a463f548c703c72e498da02de extends Twig_Template
 
     public function getDebugInfo()
     {
-        return array (  166 => 501,  163 => 500,  47 => 386,  44 => 385,  39 => 7,  34 => 4,  31 => 3,);
+        return array (  106 => 444,  104 => 443,  80 => 421,  53 => 390,  51 => 389,  46 => 386,  43 => 385,  38 => 7,  33 => 4,  30 => 3,);
     }
 }

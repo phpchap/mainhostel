@@ -17,7 +17,13 @@
 <!--=== Content Part ===-->
 <div class="container">	
     <div class="row-fluid">
-        <div class="span9">
+
+        {% include '::column_left.html.twig' %}
+
+        <div class="span6">
+            <!-- Contacts -->
+            <div class="headline"><h3>Map</h3></div>
+
             <div id="map" class="map map-box map-box-space margin-bottom-40"></div><!---/map-->
             <p>Atlas Hostel is located next to London Paddington train station; A short walk away from the hostel and you have the majestic Hyde Park, shopping on Oxford Circus, Regents Street and Kensington. </p><br />
             <form>
@@ -30,12 +36,13 @@
                 <p><button type="submit" class="btn-u">Send Message</button></p>
             </form>
         </div><!--/span9-->
+
         <div class="span3">
             <!-- Contacts -->
             <div class="headline"><h3>Address</h3></div>
 
             <ul class="unstyled who margin-bottom-20">
-                <li><i class="icon-home"></i>16 Talbot Street, London, Paddington, W25LH</a></li>
+                <li><i class="icon-home"></i>16 Talbot Square, London, Paddington, W25LH</a></li>
                 <li><i class="icon-phone-sign"></i>0845 519 9448</a></li>
             </ul>
 

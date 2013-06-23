@@ -3,7 +3,7 @@
 {% block heading_breadcrumbs %}
 <div class="row-fluid breadcrumbs">
     <div class="container">
-        <h1 class="pull-left">Help</h1>
+        <h1 class="pull-left">FAQ</h1>
         <ul class="pull-right breadcrumb">
             <li><a href="/">Home</a> <span class="divider">/</span></li>
             <li class="active">Help</li>
@@ -15,153 +15,141 @@
 {% block content_part %}
 <div class="container">
     <div class="row-fluid">
-        <div class="row-fluid margin-bottom-10">
-            <div class="span4 bg-light"><!-- Just delete "bg-light" class to hide background color -->
-                <h4>FAQs</h4>
-                <div class="accordion acc-home margin-bottom-40" id="accordion2">
-                    <div class="accordion-group">
-                        <div class="accordion-heading">
-                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-                                Nearest tube / bus stop to the hostel?
-                            </a>
+        {% include '::column_left.html.twig' %}
+        <div class="span6">
+            <h4>FAQs</h4>
+            <div class="accordion acc-home margin-bottom-40" id="accordion2">
+                <div class="accordion-group">
+                    <div class="accordion-heading">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                            Nearest tube / bus stop to the hostel?
+                        </a>
+                    </div>
+                    <div id="collapseOne" class="accordion-body in collapse" style="height: auto;">
+                        <div class="accordion-inner">
+                            bar 1
                         </div>
-                        <div id="collapseOne" class="accordion-body in collapse" style="height: auto;">
-                            <div class="accordion-inner">
-                                bar 1
-                            </div>
+                    </div>
+                </div><!--/accordion-group-->
+                <div class="accordion-group">
+                    <div class="accordion-heading">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+                            What is the address of the hostel?
+                        </a>
+                    </div>
+                    <div id="collapseTwo" class="accordion-body collapse" style="height: 0px;">
+                        <div class="accordion-inner">
+                            bar 2
                         </div>
-                    </div><!--/accordion-group-->
-                    <div class="accordion-group">
-                        <div class="accordion-heading">
-                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-                                What is the address of the hostel?
-                            </a>
-                        </div>
-                        <div id="collapseTwo" class="accordion-body collapse" style="height: 0px;">
-                            <div class="accordion-inner">
-                                bar 2
-                            </div>
-                        </div>
-                    </div><!--/accordion-group-->
+                    </div>
+                </div><!--/accordion-group-->
 
-                    <div class="accordion-group">
-                        <div class="accordion-heading">
-                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
-                                What do i need to check in / out?
-                            </a>
+                <div class="accordion-group">
+                    <div class="accordion-heading">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
+                            What do i need to check in / out?
+                        </a>
+                    </div>
+                    <div id="collapseThree" class="accordion-body collapse" style="height: 0px;">
+                        <div class="accordion-inner">
+                            bar 3
                         </div>
-                        <div id="collapseThree" class="accordion-body collapse" style="height: 0px;">
-                            <div class="accordion-inner">
-                                bar 3
-                            </div>
-                        </div>
-                    </div><!--/accordion-group-->
+                    </div>
+                </div><!--/accordion-group-->
 
-                    <div class="accordion-group">
-                        <div class="accordion-heading">
-                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour">
-                                What time do i need to check in / out?
-                            </a>
+                <div class="accordion-group">
+                    <div class="accordion-heading">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour">
+                            What time do i need to check in / out?
+                        </a>
+                    </div>
+                    <div id="collapseFour" class="accordion-body collapse" style="height: 0px;">
+                        <div class="accordion-inner">
+                            bar 4
                         </div>
-                        <div id="collapseFour" class="accordion-body collapse" style="height: 0px;">
-                            <div class="accordion-inner">
-                                bar 4
-                            </div>
-                        </div>
-                    </div><!--/accordion-group-->
+                    </div>
+                </div><!--/accordion-group-->
 
-                    <div class="accordion-group">
-                        <div class="accordion-heading">
-                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFive">
-                                What is your policy for under 18s?
-                            </a>
+                <div class="accordion-group">
+                    <div class="accordion-heading">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFive">
+                            What is your policy for under 18s?
+                        </a>
+                    </div>
+                    <div id="collapseFive" class="accordion-body collapse" style="height: 0px;">
+                        <div class="accordion-inner">
+                            bar 5
                         </div>
-                        <div id="collapseFive" class="accordion-body collapse" style="height: 0px;">
-                            <div class="accordion-inner">
-                                bar 5
-                            </div>
-                        </div>
-                    </div><!--/accordion-group-->
+                    </div>
+                </div><!--/accordion-group-->
 
-                    <div class="accordion-group">
-                        <div class="accordion-heading">
-                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseSix">
-                                What is included in the price?
-                            </a>
+                <div class="accordion-group">
+                    <div class="accordion-heading">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseSix">
+                            What is included in the price?
+                        </a>
+                    </div>
+                    <div id="collapseSix" class="accordion-body collapse" style="height: 0px;">
+                        <div class="accordion-inner">
+                            bar 5
                         </div>
-                        <div id="collapseSix" class="accordion-body collapse" style="height: 0px;">
-                            <div class="accordion-inner">
-                                bar 5
-                            </div>
-                        </div>
-                    </div><!--/accordion-group-->
+                    </div>
+                </div><!--/accordion-group-->
 
-                    <div class="accordion-group">
-                        <div class="accordion-heading">
-                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseSeven">
-                                How long is reception open for?
-                            </a>
+                <div class="accordion-group">
+                    <div class="accordion-heading">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseSeven">
+                            How long is reception open for?
+                        </a>
+                    </div>
+                    <div id="collapseSeven" class="accordion-body collapse" style="height: 0px;">
+                        <div class="accordion-inner">
+                            bar 5
                         </div>
-                        <div id="collapseSeven" class="accordion-body collapse" style="height: 0px;">
-                            <div class="accordion-inner">
-                                bar 5
-                            </div>
-                        </div>
-                    </div><!--/accordion-group-->
+                    </div>
+                </div><!--/accordion-group-->
 
-                    <div class="accordion-group">
-                        <div class="accordion-heading">
-                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseEight">
-                                Where can i store my luggage?
-                            </a>
+                <div class="accordion-group">
+                    <div class="accordion-heading">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseEight">
+                            Where can i store my luggage?
+                        </a>
+                    </div>
+                    <div id="collapseEight" class="accordion-body collapse" style="height: 0px;">
+                        <div class="accordion-inner">
+                            bar 5
                         </div>
-                        <div id="collapseEight" class="accordion-body collapse" style="height: 0px;">
-                            <div class="accordion-inner">
-                                bar 5
-                            </div>
-                        </div>
-                    </div><!--/accordion-group-->
+                    </div>
+                </div><!--/accordion-group-->
 
-                    <div class="accordion-group">
-                        <div class="accordion-heading">
-                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseNine">
-                                Do you have wifi in the hostel?
-                            </a>
+                <div class="accordion-group">
+                    <div class="accordion-heading">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseNine">
+                            Do you have wifi in the hostel?
+                        </a>
+                    </div>
+                    <div id="collapseNine" class="accordion-body collapse" style="height: 0px;">
+                        <div class="accordion-inner">
+                            bar 5
                         </div>
-                        <div id="collapseNine" class="accordion-body collapse" style="height: 0px;">
-                            <div class="accordion-inner">
-                                bar 5
-                            </div>
-                        </div>
-                    </div><!--/accordion-group-->
+                    </div>
+                </div><!--/accordion-group-->
 
-                    <div class="accordion-group">
-                        <div class="accordion-heading">
-                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTen">
-                                Do you serve breakfast?
-                            </a>
+                <div class="accordion-group">
+                    <div class="accordion-heading">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTen">
+                            Do you serve breakfast?
+                        </a>
+                    </div>
+                    <div id="collapseTen" class="accordion-body collapse" style="height: 0px;">
+                        <div class="accordion-inner">
+                            bar 5
                         </div>
-                        <div id="collapseTen" class="accordion-body collapse" style="height: 0px;">
-                            <div class="accordion-inner">
-                                bar 5
-                            </div>
-                        </div>
-                    </div><!--/accordion-group-->
-                </div>
+                    </div>
+                </div><!--/accordion-group-->
             </div>
-
-            <div class="span4 bg-light"><!-- Just delete "bg-light" class to hide background color -->
-                <h4>Customer Service</h4>
-                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non similique sunt.</p>
-            </div>
-
-            <div class="span4 bg-light"><!-- Just delete "bg-light" class to hide background color -->
-                <h4>Customer Service</h4>
-                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non similique sunt.</p>
-            </div>
-
-
         </div>
+        {% include '::column_right.html.twig' %}
     </div>
 </div>
 {% endblock %}

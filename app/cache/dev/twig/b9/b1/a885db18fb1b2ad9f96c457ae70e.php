@@ -14,8 +14,8 @@ class __TwigTemplate_b9b1a885db18fb1b2ad9f96c457ae70e extends Twig_Template
             'before_head' => array($this, 'block_before_head'),
             'after_body' => array($this, 'block_after_body'),
             'top' => array($this, 'block_top'),
-            'header' => array($this, 'block_header'),
             'logo' => array($this, 'block_logo'),
+            'header' => array($this, 'block_header'),
             'navbar' => array($this, 'block_navbar'),
             'slider' => array($this, 'block_slider'),
             'heading_breadcrumbs' => array($this, 'block_heading_breadcrumbs'),
@@ -122,38 +122,38 @@ class __TwigTemplate_b9b1a885db18fb1b2ad9f96c457ae70e extends Twig_Template
 ";
         // line 51
         $this->displayBlock('top', $context, $blocks);
-        // line 71
+        // line 78
         echo "
 ";
-        // line 72
+        // line 79
         $this->displayBlock('header', $context, $blocks);
-        // line 121
-        echo "
-";
         // line 122
-        $this->displayBlock('slider', $context, $blocks);
+        echo "
+";
         // line 123
-        echo "
-";
+        $this->displayBlock('slider', $context, $blocks);
         // line 124
-        $this->displayBlock('heading_breadcrumbs', $context, $blocks);
-        // line 125
         echo "
 ";
+        // line 125
+        $this->displayBlock('heading_breadcrumbs', $context, $blocks);
         // line 126
-        $this->displayBlock('content_part', $context, $blocks);
+        echo "
+";
         // line 127
+        $this->displayBlock('content_part', $context, $blocks);
+        // line 128
         echo "
 
 ";
-        // line 129
+        // line 130
         $this->displayBlock('copyright', $context, $blocks);
-        // line 135
+        // line 141
         echo "
 ";
-        // line 136
+        // line 142
         $this->displayBlock('footer_js', $context, $blocks);
-        // line 169
+        // line 174
         echo "</body>
 </html> ";
     }
@@ -194,16 +194,21 @@ class __TwigTemplate_b9b1a885db18fb1b2ad9f96c457ae70e extends Twig_Template
 <div class=\"top\">
     <div class=\"container\">                 
         <div class=\"row-fluid\">
+
+            ";
+        // line 57
+        $this->displayBlock('logo', $context, $blocks);
+        // line 63
+        echo "
             <ul class=\"social-icons\" style=\"float:right;width:105px;\">
                 <li><a href=\"#\" data-original-title=\"Facebook\" class=\"social_facebook\"></a></li>
                 <li><a href=\"#\" data-original-title=\"Twitter\" class=\"social_twitter\"></a></li>
                 <li><a href=\"#\" data-original-title=\"Pinterest\" class=\"social_pintrest\"></a></li>
             </ul>
-            <ul class=\"loginbar inline\" style=\"float:right;width:300px;\">
+            <ul class=\"loginbar inline\" style=\"float:right;width:340px;\">
                 <li><a href=\"mailto:info@atlashostels.com\"><i class=\"icon-envelope-alt\"></i> info@atlashostels.com</a></li> 
                 <li><a><i class=\"icon-phone-sign\"></i> 0845 519 9448</a></li>   
             </ul>
-
         </div>                        
     </div><!--/container-->     
 </div><!--/top-->
@@ -211,44 +216,39 @@ class __TwigTemplate_b9b1a885db18fb1b2ad9f96c457ae70e extends Twig_Template
 ";
     }
 
-    // line 72
+    // line 57
+    public function block_logo($context, array $blocks = array())
+    {
+        // line 58
+        echo "            <!-- Logo -->       
+            <div class=\"logo\">                                             
+                <a href=\"/\"><img width=\"219\" height=\"106\" id=\"logo-header\" src=\"/assets/img/atlashostels.png\" alt=\"Atlas Hostels\" title=\"Atlas Hostels\"></a>
+            </div><!-- /logo -->                  
+            ";
+    }
+
+    // line 79
     public function block_header($context, array $blocks = array())
     {
-        // line 73
+        // line 80
         echo "<!--=== Header ===-->
 <div class=\"header\">               
     <div class=\"container\"> 
+
         ";
-        // line 76
-        $this->displayBlock('logo', $context, $blocks);
-        // line 82
-        echo "
-        ";
-        // line 83
+        // line 84
         $this->displayBlock('navbar', $context, $blocks);
-        // line 117
+        // line 118
         echo "    </div><!-- /container -->               
 </div><!--/header -->      
 <!--=== End Header ===-->
 ";
     }
 
-    // line 76
-    public function block_logo($context, array $blocks = array())
-    {
-        // line 77
-        echo "        <!-- Logo -->       
-        <div class=\"logo\">                                             
-            ";
-        // line 80
-        echo "        </div><!-- /logo -->                  
-        ";
-    }
-
-    // line 83
+    // line 84
     public function block_navbar($context, array $blocks = array())
     {
-        // line 84
+        // line 85
         echo "        <!-- Menu -->       
         <div class=\"navbar\">                                
             <div class=\"navbar-inner\">                                  
@@ -261,39 +261,39 @@ class __TwigTemplate_b9b1a885db18fb1b2ad9f96c457ae70e extends Twig_Template
                     <ul class=\"nav\">
                         <li class=\"active\">
                             <a href=\"";
-        // line 95
+        // line 96
         echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("atlas_front_end_homepage"), "html", null, true);
         echo "\">Home</a>
                         </li>
                         <li>
                             <a href=\"";
-        // line 98
+        // line 99
         echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("atlas_front_end_booking"), "html", null, true);
-        echo "\">Booking</a>
+        echo "\">Book Now!</a>
                         </li>
                         <li>
                             <a href=\"";
-        // line 101
+        // line 102
         echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("atlas_front_end_location"), "html", null, true);
         echo "\">Location</a>
                         </li>
                         <li>
                             <a href=\"";
-        // line 104
+        // line 105
         echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("atlas_front_end_rooms"), "html", null, true);
         echo "\">Rooms</a>
                         </li>
                         <li>
                             <a href=\"";
-        // line 107
+        // line 108
         echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("atlas_front_end_gallery"), "html", null, true);
         echo "\">Gallery</a>
                         </li>
                         <li>
                             <a href=\"";
-        // line 110
+        // line 111
         echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("atlas_front_end_help"), "html", null, true);
-        echo "\" >Help</a>
+        echo "\" >FAQ</a>
                         </li>
                     </ul>
                 </div><!-- /nav-collapse -->                                
@@ -302,67 +302,80 @@ class __TwigTemplate_b9b1a885db18fb1b2ad9f96c457ae70e extends Twig_Template
         ";
     }
 
-    // line 122
+    // line 123
     public function block_slider($context, array $blocks = array())
     {
     }
 
-    // line 124
+    // line 125
     public function block_heading_breadcrumbs($context, array $blocks = array())
     {
     }
 
-    // line 126
+    // line 127
     public function block_content_part($context, array $blocks = array())
     {
     }
 
-    // line 129
+    // line 130
     public function block_copyright($context, array $blocks = array())
     {
-        // line 130
+        // line 131
         echo "<!--=== Copyright ===-->
 <div class=\"copyright\">
-</div><!--/copyright-->\t
+    <div class=\"container\">
+        <div class=\"row-fluid\">
+            <div class=\"span12\" id=\"footer_text\"><p>2013 © Atlas Hostels PLC. <a href=\"";
+        // line 135
+        echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("atlas_front_end_privacy_policy"), "html", null, true);
+        echo "\">Privacy Policy</a> | <a href=\"";
+        echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("atlas_front_end_terms"), "html", null, true);
+        echo "\">Terms &amp; Conditions</a> | <a href=\"";
+        echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("atlas_front_end_location"), "html", null, true);
+        echo "\">Contact Us</a> | <a href=\"";
+        echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("atlas_front_end_investors"), "html", null, true);
+        echo "\">Investor Relations</a> </p></div>
+        </div><!--/row-fluid-->
+    </div><!--/container-->\t
+</div>
 <!--=== End Copyright ===-->
 ";
     }
 
-    // line 136
+    // line 142
     public function block_footer_js($context, array $blocks = array())
     {
-        // line 137
+        // line 143
         echo "<!-- JS Global Compulsory -->           
 <script type=\"text/javascript\" src=\"/assets/js/jquery-1.8.2.min.js\"></script>
 <script type=\"text/javascript\" src=\"/assets/js/modernizr.custom.js\"></script>        
 <script type=\"text/javascript\" src=\"/assets/plugins/bootstrap/js/bootstrap.min.js\"></script> 
 <!-- JS Implementing Plugins -->           
+<script type=\"text/javascript\" src=\"http://maps.google.com/maps/api/js?sensor=true\"></script>
 <script type=\"text/javascript\" src=\"/assets/plugins/flexslider/jquery.flexslider-min.js\"></script>
+<script type=\"text/javascript\" src=\"/assets/plugins/gmap/gmap.js\"></script>
+<script type=\"text/javascript\" src=\"/assets/plugins/back-to-top.js\"></script>
 <script type=\"text/javascript\" src=\"/assets/plugins/parallax-slider/js/modernizr.js\"></script>
 <script type=\"text/javascript\" src=\"/assets/plugins/parallax-slider/js/jquery.cslider.js\"></script> 
 <script type=\"text/javascript\" src=\"/assets/plugins/bxslider/jquery.bxslider.js\"></script>
-<script type=\"text/javascript\" src=\"http://maps.google.com/maps/api/js?sensor=true\"></script>
-<script type=\"text/javascript\" src=\"/assets/plugins/gmap/gmap.js\"></script>
-<script type=\"text/javascript\" src=\"/assets/plugins/back-to-top.js\"></script>
 <!-- JS Page Level -->           
 <script type=\"text/javascript\" src=\"/assets/js/app.js\"></script>
 <script type=\"text/javascript\" src=\"/assets/js/pages/index.js\"></script>
+<script type=\"text/javascript\" src=\"/assets/js/pages/contact.js\"></script>
 <script type=\"text/javascript\" src=\"/assets/plugins/fancybox/source/jquery.fancybox.pack.js\"></script>
 <script type=\"text/javascript\" src=\"/assets/plugins/revolution_slider/rs-plugin/js/jquery.themepunch.plugins.min.js\"></script>
 <script type=\"text/javascript\" src=\"/assets/plugins/revolution_slider/rs-plugin/js/jquery.themepunch.revolution.min.js\"></script> 
-
 <script type=\"text/javascript\">
     jQuery(document).ready(function() {
         App.init();
         App.initSliders();
-        Index.initRevolutionSlider();        
+        Contact.initMap();        
         ";
-        // line 161
+        // line 167
         $this->displayBlock('js_init', $context, $blocks);
         echo "  
     });
 </script>
-
 <!--[if lt IE 9]>
 <script src=\"/assets/js/respond.js\"></script>
 <![endif]-->
@@ -385,6 +398,6 @@ class __TwigTemplate_b9b1a885db18fb1b2ad9f96c457ae70e extends Twig_Template
 
     public function getDebugInfo()
     {
-        return array (  361 => 161,  335 => 137,  332 => 136,  324 => 130,  321 => 129,  316 => 126,  311 => 124,  306 => 122,  295 => 110,  289 => 107,  283 => 104,  277 => 101,  271 => 98,  265 => 95,  252 => 84,  249 => 83,  244 => 80,  240 => 77,  237 => 76,  230 => 117,  228 => 83,  225 => 82,  223 => 76,  218 => 73,  215 => 72,  193 => 52,  190 => 51,  178 => 41,  175 => 40,  170 => 35,  165 => 8,  162 => 7,  157 => 169,  155 => 136,  152 => 135,  150 => 129,  146 => 127,  144 => 126,  141 => 125,  139 => 124,  136 => 123,  134 => 122,  131 => 121,  129 => 72,  126 => 71,  124 => 51,  121 => 50,  119 => 40,  113 => 36,  111 => 35,  105 => 32,  101 => 31,  97 => 30,  93 => 29,  88 => 27,  84 => 26,  80 => 25,  76 => 24,  72 => 23,  66 => 20,  62 => 19,  58 => 18,  54 => 17,  50 => 16,  42 => 10,  40 => 7,  32 => 1,  46 => 386,  43 => 385,  38 => 7,  33 => 4,  30 => 3,);
+        return array (  375 => 167,  349 => 143,  346 => 142,  330 => 135,  324 => 131,  321 => 130,  316 => 127,  311 => 125,  306 => 123,  295 => 111,  289 => 108,  283 => 105,  277 => 102,  271 => 99,  265 => 96,  252 => 85,  249 => 84,  242 => 118,  240 => 84,  234 => 80,  231 => 79,  223 => 58,  220 => 57,  202 => 63,  200 => 57,  193 => 52,  190 => 51,  178 => 41,  175 => 40,  170 => 35,  165 => 8,  162 => 7,  157 => 174,  155 => 142,  152 => 141,  150 => 130,  146 => 128,  144 => 127,  141 => 126,  139 => 125,  136 => 124,  134 => 123,  131 => 122,  129 => 79,  126 => 78,  124 => 51,  121 => 50,  119 => 40,  113 => 36,  111 => 35,  105 => 32,  101 => 31,  97 => 30,  93 => 29,  88 => 27,  84 => 26,  76 => 24,  72 => 23,  66 => 20,  62 => 19,  58 => 18,  54 => 17,  50 => 16,  42 => 10,  40 => 7,  32 => 1,  106 => 444,  104 => 443,  80 => 25,  53 => 390,  51 => 389,  46 => 386,  43 => 385,  38 => 7,  33 => 4,  30 => 3,);
     }
 }

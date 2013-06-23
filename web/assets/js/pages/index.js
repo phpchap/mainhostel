@@ -15,7 +15,7 @@ var Index = function () {
             jQuery(document).ready(function() {
                 api =  jQuery('.fullwidthabnner').revolution(
                 {
-                    delay:9000,
+                    delay:4000,
                     startheight:500,
                     startwidth:960,
 

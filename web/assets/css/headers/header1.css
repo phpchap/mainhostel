@@ -17,12 +17,15 @@
 	padding-bottom:15px;
 }
 
-.loginbar li a, 
-.loginbar li a:hover {
-	color:#7c8082;
+.loginbar li a{
+	color:#AB0765;
 	font-size:11px;
 	text-transform:uppercase;
-	font-family:'Delius', sans-serif;
+	font-family:'Short Stack', sans-serif;
+} 
+
+.loginbar li a:hover {
+	color:#00B3DE;
 }
 
 .loginbar li.devider { 
@@ -36,7 +39,7 @@
 }
 
 .loginbar i {
-	color:#999;
+	color:#AB0765;
 	font-size:18px;
 	margin-top:3px;
 	cursor:pointer;
@@ -122,9 +125,8 @@
 /*Header (logo and menu)
 ------------------------------------*/
 .header {
-	z-index:999;
+
 	position:relative;
-	border-bottom:solid 2px #eee;
 }
 
 .header .container {
@@ -132,9 +134,9 @@
 }
 
 .logo {
-	position:absolute;
-	top:-5px;
-	left:0;
+        position: absolute;
+        top: 0px;
+        z-index: 99999;
 }
 
 /*Menu*/
@@ -171,16 +173,16 @@
 	display:block;
 	font-size:15px;
 	font-weight:400;
-	color: #687074;
+	color: #00B3DE;
 	text-shadow:none;
 	padding:9px 20px;
 	text-transform:uppercase;
-	border-bottom:solid 2px #eee;
-	font-family:'Delius', sans-serif;
-    -webkit-transition:all 0.4s ease-in-out;
-    -moz-transition:all 0.4s ease-in-out;
-    -o-transition:all 0.4s ease-in-out;
-    transition:all 0.4s ease-in-out;
+	border-bottom:1px dotted #E4E9F0;
+	font-family:'Short Stack', sans-serif;
+        -webkit-transition:all 0.4s ease-in-out;
+        -moz-transition:all 0.4s ease-in-out;
+        -o-transition:all 0.4s ease-in-out;
+        transition:all 0.4s ease-in-out;
 }
 
 .collapse.in ul { 

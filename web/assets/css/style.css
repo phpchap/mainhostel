@@ -7,25 +7,26 @@ Website: http://htmlstream.com/preview/unify
 */
 
 /*Import Google Fonts*/
+@import url(http://fonts.googleapis.com/css?family=Short+Stack);
 @import url(http://fonts.googleapis.com/css?family=Monda:400,700);
 /*@import url(http://fonts.googleapis.com/css?family=Open+Sans);*/
 @import url(http://fonts.googleapis.com/css?family=Architects+Daughter);
 @import url(http://fonts.googleapis.com/css?family=Delius);
-
+/*'Delius', sans-serif*/
 * {
 	border-radius:0 !important;
 }
 
 body { 
-    padding:0;
-	color:#333; 
-    font-size:13px;
-    line-height:1.6;
-	background:#fff;
+        padding:0;
+        color:#333; 
+        font-size:13px;
+        line-height:1.6;
+        background:#FEFBFF;
 }
 
 p, a, li { 
-	color:#555;
+	color:#00B3DE;
 	line-height:1.6; 
 }
 
@@ -33,7 +34,7 @@ a,
 a:focus, 
 a:hover, 
 a:active {
-   outline:0 !important;
+        outline:0 !important;
 }
 a:hover {
 	color:#72c02c;
@@ -44,9 +45,9 @@ h1, h2, h3, h4, h5 {
 	color:#555; 
 	margin-top:5px; 
 	text-shadow:none; 
-	text-shadow:0 0 1px #f6f6f6;
+	text-shadow:0 0 1px #00B3DE;
 	font-weight:normal !important; 
-	font-family:'Delius', sans-serif; 
+	font-family:'Short Stack', sans-serif; 
 } 
 h1 i, h2 i, h3 i, h4 i, h5 i {
 	margin-right:7px;
@@ -65,7 +66,7 @@ h1 i, h2 i, h3 i, h4 i, h5 i {
 }
 .headline h3, 
 .headline h4 {
-	color:#585f69;
+	color:#00B3DE;
 	margin:0 0 -2px 0;
 	padding-right:10px;
 	display:inline-block;
@@ -172,7 +173,7 @@ blockquote:hover {
 	font-size:16px;
 	background:#fcfcfc;
 	border-left:4px solid #94c564; 
-	font-family:'Delius', sans-serif;
+	font-family:'Short Stack', sans-serif;
 }
 .hero h1, .hero p { 
 	text-shadow:1px 1px 0 #fff;
@@ -458,17 +459,21 @@ blockquote:hover {
 
 /*Copyright*/
 .copyright {
+        margin: 0 auto;
+        margin-top: 10px;
         font-size: 12px;
         padding: 5px 10px;
-        height: 204px;
-        background: url(/assets/img/footer.png) repeat 0px 0;
-        background-position: 0% 770px;
-        background-color: white;
-        background-size: 77%;
+        border-top: solid 10px #AB0765;
+}
+
+#footer_text {
+        width: 50%;
+        float: center;
+        margin: 0 auto;
 }
 
 .copyright p {
-	color:#fff;
+/*	color:#fff;*/   
 }
 .copyright a {
 	margin:0 5px;
